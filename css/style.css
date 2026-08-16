@@ -1262,21 +1262,6 @@ button.tag-pill:focus-visible {
     padding: 24px;
   }
 
-  .media-row {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
-  }
-
-  .media-row__image {
-    width: 282px;
-    flex-shrink: 0;
-  }
-
-  .media-row--bottom .media-row__image {
-    width: 281px;
-  }
-
   .article__gallery {
     flex-direction: row;
     gap: 24px;
