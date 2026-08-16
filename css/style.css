@@ -1319,13 +1319,18 @@ button.tag-pill:focus-visible {
     display: none;
   }
 
-  /* Карточки блога: равные 2 колонки */
+  /* Карточки блога: первый ряд — 2 карточки, далее по 3 */
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
-  .card--wide {
-    grid-column: auto;
+  .card {
+    grid-column: span 2;
+  }
+
+  .card--wide,
+  .cards .card:nth-child(2) {
+    grid-column: span 3;
   }
 
   .card__image,
