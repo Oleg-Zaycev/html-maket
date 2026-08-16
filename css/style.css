@@ -387,16 +387,13 @@ button.tag-pill:focus-visible {
   gap: 8px;
 }
 
-/* Мобильный порядок: сначала текст, затем картинка */
 .card__body {
-  order: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 .card__image {
-  order: 2;
   width: 100%;
   height: 206px;
   object-fit: cover;
@@ -434,7 +431,6 @@ button.tag-pill:focus-visible {
 }
 
 .card__footer {
-  order: 3;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1149,12 +1145,7 @@ button.tag-pill:focus-visible {
     grid-column: 1 / -1;
   }
 
-  .card__body {
-    order: 0;
-  }
-
   .card__image {
-    order: 1;
     height: 206px;
   }
 
