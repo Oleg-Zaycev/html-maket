@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Блог онлайн-сервиса подбора психологов YouTalk: статьи о самооценке, тревоге, чувствах и эмоциях.">
+  <title>Блог — YouTalk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo header__logo" href="index.html" aria-label="YouTalk — на главную">
+        <svg class="logo__icon" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+          <rect width="36" height="36" rx="10" fill="#2963A3"></rect>
+          <path d="M18 26.5c-.35 0-4.5-3.6-6.6-6.1-1.7-2-1.9-4.6-.6-6.6 1.3-1.9 4-2.4 5.7-1 .6.5 1.1 1 1.5 1.6.4-.6.9-1.1 1.5-1.6 1.7-1.4 4.4-.9 5.7 1 1.3 2 1.1 4.6-.6 6.6-2.1 2.5-6.3 6.1-6.6 6.1z" fill="#FFFFFF"></path>
+        </svg>
+        <span class="logo__text">YouTalk</span>
+      </a>
+      <nav class="nav header__nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Тарифы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Для бизнеса</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Психологам</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Сертификаты</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
+          <li class="nav__item">
+            <button class="nav__link nav__link--dropdown" type="button">
+              Материалы
+              <svg class="nav__icon" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false">
+                <path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <a class="btn btn--ghost header__button" href="#">Подобрать психолога</a>
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+            <svg class="breadcrumbs__icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current" aria-current="page">Блог</li>
+        </ol>
+      </nav>
+
+      <h1 class="page-title">Блог</h1>
+
+      <section class="tags-filter" aria-label="Фильтр статей по тегам">
+        <h2 class="visually-hidden">Теги</h2>
+        <ul class="tags-filter__list">
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button"><span class="tag-pill__icon" aria-hidden="true">✨</span>Все</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Самооценка и самопринятие</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill tag-pill--active" type="button" aria-pressed="true"><span class="tag-pill__icon" aria-hidden="true">🧠</span>Self</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Чувства и эмоции</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Тревога</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Упражнения</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Психология питания</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Насилие</button>
+          </li>
+          <li class="tags-filter__item">
+            <button class="tag-pill" type="button">Личное здоровье</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cards" aria-label="Статьи блога">
+        <article class="card card--wide">
+          <a class="card__link" href="article.html">
+            <img class="card__image" src="img/blog-1.png" alt="Обложка статьи «Эмоциональное выгорание: стадии и симптомы»" width="468" height="260">
+            <div class="card__body">
+              <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактика</h3>
+              <p class="card__author">Автор: Лиза Файнтух</p>
+              <p class="card__excerpt">Изначально термин «эмоциональное выгорание» касался профессиональной сферы и относился к состоянию людей тех профессий, которые тесно связаны с общением...</p>
+            </div>
+          </a>
+          <div class="card__footer">
+            <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            <ul class="card__tags">
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">💗</span>Самооценка и самопринятие</li>
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">🧠</span>Self</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="article.html">
+            <img class="card__image" src="img/blog-2.png" alt="Обложка статьи «Как не утонуть в тревоге и управлять своими страхами»" width="468" height="260">
+            <div class="card__body">
+              <h3 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h3>
+              <p class="card__author">Автор: Екатерина Бельтюкова</p>
+              <p class="card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом — умение в разных ситуациях по-разному обходиться со своими эмоциями...</p>
+            </div>
+          </a>
+          <div class="card__footer">
+            <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+            <ul class="card__tags">
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">🧠</span>Self</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="article.html">
+            <img class="card__image" src="img/blog-3.png" alt="Обложка статьи про эмоциональное выгорание и психология питания" width="468" height="260">
+            <div class="card__body">
+              <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактика</h3>
+              <p class="card__author">Автор: Лиза Файнтух</p>
+              <p class="card__excerpt">Изначально термин «эмоциональное выгорание» касался профессиональной сферы и относился к состоянию людей, чья работа связана с постоянным общением...</p>
+            </div>
+          </a>
+          <div class="card__footer">
+            <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            <ul class="card__tags">
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">💗</span>Самооценка и самопринятие</li>
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">🥗</span>Психология питания</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="article.html">
+            <img class="card__image" src="img/blog-4.png" alt="Обложка статьи «Как управлять своими эмоциями: 8 шагов»" width="468" height="260">
+            <div class="card__body">
+              <h3 class="card__title">Как управлять своими эмоциями: 8 шагов</h3>
+              <p class="card__author">Автор: Екатерина Бельтюкова</p>
+              <p class="card__excerpt">Клиенты часто спрашивают, как контролировать свои негативные эмоции. Пришло время разобрать рабочие приёмы, которые действительно помогают...</p>
+            </div>
+          </a>
+          <div class="card__footer">
+            <time class="card__date" datetime="2021-08-07">07.08.2021</time>
+            <ul class="card__tags">
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">🧠</span>Self</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="article.html">
+            <img class="card__image" src="img/blog-5.png" alt="Обложка статьи о тревоге и страхах" width="468" height="260">
+            <div class="card__body">
+              <h3 class="card__title">Как не утонуть в тревоге и управлять своими страхами</h3>
+              <p class="card__author">Автор: Екатерина Бельтюкова</p>
+              <p class="card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом — умение в разных ситуациях по-разному обходиться со своими эмоциями...</p>
+            </div>
+          </a>
+          <div class="card__footer">
+            <time class="card__date" datetime="2021-08-11">11.08.2021</time>
+            <ul class="card__tags">
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">🧠</span>Self</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__link" href="article.html">
+            <img class="card__image" src="img/blog-6.png" alt="Обложка статьи про эмоциональное выгорание" width="468" height="260">
+            <div class="card__body">
+              <h3 class="card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактика</h3>
+              <p class="card__author">Автор: Лиза Файнтух</p>
+              <p class="card__excerpt">Изначально термин «эмоциональное выгорание» касался профессиональной сферы и относился к состоянию людей helping-профессий...</p>
+            </div>
+          </a>
+          <div class="card__footer">
+            <time class="card__date" datetime="2021-08-21">21.08.2021</time>
+            <ul class="card__tags">
+              <li class="tag-pill tag-pill--mini"><span class="tag-pill__icon" aria-hidden="true">🧠</span>Self</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <button class="btn btn--primary btn--more" type="button">Ещё</button>
+
+      <nav class="pagination" aria-label="Постраничная навигация">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--start" href="#" tabindex="-1" aria-disabled="true">В начало</a>
+          </li>
+          <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#" aria-current="page">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item pagination__item--dots" aria-hidden="true">…</li>
+          <li class="pagination__item"><a class="pagination__link" href="#">12</a></li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--end" href="#">В конец</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__columns">
+          <nav class="footer__col" aria-label="О нас">
+            <h2 class="footer__title">О нас</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__link" href="#">О нас</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">Тарифы</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">Для бизнеса</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">Психологам</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-label="Блог">
+            <h2 class="footer__title">Блог</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__link" href="index.html">Блог</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">Вебинары</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">Подкаст</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="#">Сертификат</a></li>
+            </ul>
+          </nav>
+          <div class="footer__col footer__col--contacts">
+            <h2 class="footer__title">Контакты</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item"><a class="footer__link" href="tel:+74950000000">+7 (495) 000-00-00</a></li>
+              <li class="footer__list-item"><a class="footer__link" href="mailto:hello@youtalk.ru">hello@youtalk.ru</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="footer__subscribe subscribe" aria-label="Подписка на рассылку">
+          <h2 class="subscribe__title">Одно письмо в неделю со свежими новостями и акциями</h2>
+          <form class="subscribe__form" action="#" method="post">
+            <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
+            <input class="subscribe__input" id="subscribe-email" type="email" name="email" placeholder="Ваш e-mail" required>
+            <button class="subscribe__button" type="submit" aria-label="Подписаться">
+              <svg class="subscribe__icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M21 3L3 10.5l6 2.5m12-10L15 21l-4.5-6.5M21 3L9 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </form>
+          <p class="subscribe__consent">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с политикой конфиденциальности.</p>
+        </section>
+
+        <div class="footer__brand">
+          <a class="logo logo--light footer__logo" href="index.html" aria-label="YouTalk — на главную">
+            <svg class="logo__icon" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+              <rect width="36" height="36" rx="10" fill="currentColor"></rect>
+              <path d="M18 26.5c-.35 0-4.5-3.6-6.6-6.1-1.7-2-1.9-4.6-.6-6.6 1.3-1.9 4-2.4 5.7-1 .6.5 1.1 1 1.5 1.6.4-.6.9-1.1 1.5-1.6 1.7-1.4 4.4-.9 5.7 1 1.3 2 1.1 4.6-.6 6.6-2.1 2.5-6.3 6.1-6.6 6.1z" fill="#2963A3"></path>
+            </svg>
+            <span class="logo__text">YouTalk</span>
+          </a>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Мы во ВКонтакте">
+                <svg class="socials__icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <rect width="32" height="32" rx="16" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+                  <path d="M17 21.2c-6 0-9.4-4.1-9.6-10.9h3c.1 5 2.3 7.1 4 7.5v-7.5h2.9v4.3c1.7-.2 3.5-2.1 4.1-4.3h2.8c-.5 2.7-2.4 4.6-3.8 5.4 1.4.6 3.6 2.3 4.4 5.5h-3.1c-.6-2-2.2-3.5-4.4-3.7v3.7H17z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Наш Telegram-канал">
+                <svg class="socials__icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <rect width="32" height="32" rx="16" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+                  <path d="M22.5 10.2l-2.8 13c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.8.4l.3-4 7.3-6.6c.3-.3-.1-.4-.5-.2l-9 5.7-3.9-1.2c-.8-.3-.8-.8.2-1.2l15.1-5.8c.7-.3 1.3.2 1.1 1.3z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Наш YouTube-канал">
+                <svg class="socials__icon" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                  <rect width="32" height="32" rx="16" fill="none" stroke="currentColor" stroke-width="1.5"></rect>
+                  <path d="M16 10.5c2.9 0 5.3.2 6.4.4.9.2 1.4.8 1.5 1.7.2 1 .2 2.2.2 3.4s0 2.4-.2 3.4c-.1.9-.6 1.5-1.5 1.7-1.1.2-3.5.4-6.4.4s-5.3-.2-6.4-.4c-.9-.2-1.4-.8-1.5-1.7-.2-1-.2-2.2-.2-3.4s0-2.4.2-3.4c.1-.9.6-1.5 1.5-1.7 1.1-.2 3.5-.4 6.4-.4zm-2.2 3.6v3.8l4.3-1.9-4.3-1.9z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider" role="separator"></div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">©Youtalk, 2018 – 2022</p>
+        <a class="footer__bottom-link" href="#">Юридические документы</a>
+        <a class="footer__bottom-link" href="#">Способы оплаты</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
