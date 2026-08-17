@@ -767,6 +767,11 @@ button.tag-pill:focus-visible {
   color: var(--color-text);
 }
 
+.quote--center {
+  align-items: center;
+  text-align: center;
+}
+
 /* ---------- Картинка + текст ---------- */
 
 .media-row {
@@ -778,6 +783,12 @@ button.tag-pill:focus-visible {
 .media-row__image {
   width: 100%;
   border-radius: 8px;
+}
+
+.media-row__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* ---------- Упражнения ---------- */
@@ -994,6 +1005,12 @@ button.tag-pill:focus-visible {
   border-radius: var(--radius-card);
 }
 
+.booking-widget__image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 .booking-widget__title {
   font-size: 18px;
   line-height: 24px;
@@ -1023,6 +1040,12 @@ button.tag-pill:focus-visible {
   border: 1px solid var(--color-border);
   border-radius: 24px;
   box-shadow: var(--shadow-card);
+}
+
+.tariff-card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .tariff-card__title {
@@ -1059,37 +1082,6 @@ button.tag-pill:focus-visible {
   align-self: flex-start;
 }
 
-/* Промо-баннер */
-
-.promo-banner {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background-color: var(--color-primary);
-  border-radius: var(--radius-card);
-}
-
-.promo-banner__images {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.promo-banner__image {
-  height: 130px;
-  object-fit: cover;
-}
-
-.promo-banner__title {
-  padding: 16px 24px 24px;
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF;
-}
-
 /* ==========================================================================
    414px — iPhone 11 Pro Max
    ========================================================================== */
@@ -1123,6 +1115,21 @@ button.tag-pill:focus-visible {
    ========================================================================== */
 
 @media (min-width: 768px) {
+  .media-row--split {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .media-row--split .media-row__image {
+    flex: 0 0 40%;
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .media-row--split .media-row__content {
+    flex: 0 0 60%;
+  }
+
   .container {
     padding: 0 20px;
   }
@@ -1348,11 +1355,5 @@ button.tag-pill:focus-visible {
 
   .sidebar {
     grid-template-columns: 1fr;
-    position: sticky;
-    top: 16px;
-  }
-
-  .promo-banner__image {
-    height: 150px;
   }
 }
